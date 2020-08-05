@@ -1,0 +1,18 @@
+PODS:
+  - WZRoute (1.1.0):
+    - WZRoute/Source (= 1.1.0)
+  - WZRoute/Source (1.1.0)
+
+DEPENDENCIES:
+  - WZRoute (from `../`)
+
+EXTERNAL SOURCES:
+  WZRoute:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  WZRoute: 93ac3d31351af652dffbc46cbbdec71a7201cd91
+
+PODFILE CHECKSUM: f89fc968c044c209f2a92238391cef6a510437ff
+
+COCOAPODS: 1.7.5
