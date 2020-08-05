@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.summary          = '我主良缘简单的路由'
 
   s.description      = <<-DESC
-    我主良缘简单的路由
+    我主良缘简单的路由.
                        DESC
 
   s.homepage         = 'https://github.com/WZLYiOS/WZRoute'
