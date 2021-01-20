@@ -5,7 +5,7 @@ use_frameworks!
 
 target 'WZRoute_Example' do
   pod 'WZRoute', :path => '../'
-
+ 
   target 'WZRoute_Tests' do
     inherit! :search_paths
 

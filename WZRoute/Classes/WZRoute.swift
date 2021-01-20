@@ -171,6 +171,26 @@ public class WZRoute {
         temArray.append(viewController)
         setViewControllers(temArray, animated: animated, completion: completion)
     }
+    
+    /// 移除某个控制器
+    /// - Parameters:
+    ///   - viewController: viewController description
+    ///   - animated: animated description
+    ///   - completion: completion description
+    open class func removeController(_ viewController: UIViewController, animated: Bool = true, completion: Completion = nil) {
+        guard let navigationController = UIViewController.topMost?.navigationController,
+              let topContoller =  UIViewController.topMost else {
+            return
+        }
+        var temArray: [UIViewController] = []
+        for vc in navigationController.viewControllers {
+            if vc.classForCoder != viewController.classForCoder {
+                temArray.append(vc)
+            }
+        }
+        let ax = topContoller.classForCoder == viewController.classForCoder ? animated : false
+        setViewControllers(temArray, animated: ax, completion: completion)
+    }
 }
 
 
