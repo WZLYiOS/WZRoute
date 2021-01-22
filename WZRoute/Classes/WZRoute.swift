@@ -153,7 +153,7 @@ public class WZRoute {
         setViewControllers(temArray, animated: animated, completion: completion)
     }
     
-    /// 跳转新控制器移除某个控制器
+    /// 跳转新当前控制器，移除历史栈
     /// - Parameters:
     ///   - viewController: viewControllers description
     ///   - animated: animated description
@@ -177,8 +177,8 @@ public class WZRoute {
     ///   - viewController: viewController description
     ///   - animated: animated description
     ///   - completion: completion description
-    open class func removeController(_ viewController: UIViewController, animated: Bool = true, completion: Completion = nil) {
-        guard let navigationController = UIViewController.topMost?.navigationController,
+    open class func popController(_ viewController: UIViewController, animated: Bool = true, completion: Completion = nil) {
+        guard let navigationController = viewController.navigationController,
               let topContoller =  UIViewController.topMost else {
             return
         }
