@@ -178,18 +178,26 @@ public class WZRoute {
     ///   - animated: animated description
     ///   - completion: completion description
     open class func popController(_ viewController: UIViewController, animated: Bool = true, completion: Completion = nil) {
-        guard let navigationController = viewController.navigationController,
-              let topContoller =  UIViewController.topMost else {
+
+        guard let navigationController = viewController.navigationController, let topViewController = UIViewController.topMost else {
             return
         }
         var temArray: [UIViewController] = []
-        for vc in navigationController.viewControllers {
-            if vc.classForCoder != viewController.classForCoder {
-                temArray.append(vc)
-            }
+        temArray.append(contentsOf: navigationController.viewControllers)
+        temArray.removeAll(where: {$0.classForCoder == viewController.classForCoder})
+        
+        var isAnimated = animated
+        if navigationController.viewControllers.last?.classForCoder == viewController.classForCoder && (viewController.presentedViewController == topViewController || viewController.presentedViewController == nil) {
+            
+        }else{
+            isAnimated = false
         }
-        let ax = topContoller.classForCoder == viewController.classForCoder ? animated : false
-        setViewControllers(temArray, animated: ax, completion: completion)
+        
+        viewController.presentedViewController?.dismiss(animated: false, completion: nil)
+        CATransaction.begin()
+        CATransaction.setCompletionBlock(completion)
+        navigationController.setViewControllers(temArray, animated: isAnimated)
+        CATransaction.commit()
     }
 }
 
