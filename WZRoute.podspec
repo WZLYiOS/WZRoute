@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.author           = { 'xiaobin liu'=> '327847390@qq.com' }
   s.source           = { :git => 'https://github.com/WZLYiOS/WZRoute.git', :tag => s.version.to_s }
 
-   s.requires_arc = true
+  s.requires_arc = true
   s.static_framework = true
   s.swift_version         = '5.0'
   s.ios.deployment_target = '9.0'
