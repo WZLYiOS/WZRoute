@@ -8,9 +8,8 @@
 
 import UIKit
 
-
 /// MARK - 路由
-public class WZRoute {
+@objc public class WZRoute: NSObject {
     
     /// 完成类型别名
     public typealias Completion = (() -> Swift.Void)?
@@ -21,9 +20,9 @@ public class WZRoute {
     ///   - viewController: 需要跳转的控制器
     ///   - animated: 是否动画(默认: true)
     ///   - completion: 动画完成回掉(默认: nil)
-    open class func push(_ viewController: UIViewController, animated: Bool = true, completion: Completion = nil) {
+    @objc open class func push(_ viewController: UIViewController, animated: Bool = true, completion: Completion = nil) {
         
-        guard let navigationController = UIViewController.topMost?.navigationController else {
+        guard let navigationController = navigationController() else {
             return
         }
         viewController.hidesBottomBarWhenPushed = true
@@ -40,9 +39,9 @@ public class WZRoute {
     /// - Parameters:
     ///   - animated: 是否动画(默认: true)
     ///   - completion: completion(默认: nil)
-    open class func pop(_ animated: Bool = true, completion: Completion = nil) {
+    @objc open class func pop(_ animated: Bool = true, completion: Completion = nil) {
         
-        guard let navigationController = UIViewController.topMost?.navigationController else {
+        guard let navigationController = navigationController() else {
             return
         }
         CATransaction.begin()
@@ -57,9 +56,9 @@ public class WZRoute {
     /// - Parameters:
     ///   - animated: 是否动画(默认: true)
     ///   - completion: completion(默认: nil)
-    open class func popRoot(_ animated: Bool = true, completion: Completion = nil) {
+    @objc open class func popRoot(_ animated: Bool = true, completion: Completion = nil) {
         
-        guard let navigationController = UIViewController.topMost?.navigationController else {
+        guard let navigationController = navigationController() else {
             return
         }
         CATransaction.begin()
@@ -75,7 +74,7 @@ public class WZRoute {
     ///   - viewController: 需要跳转的控制器
     ///   - animated: 是否动画(默认: true)
     ///   - completion: completion(默认: nil)
-    open class func present(_ viewController: UIViewController, animated: Bool = true, completion: Completion = nil) {
+    @objc open class func present(_ viewController: UIViewController, animated: Bool = true, completion: Completion = nil) {
         
         guard let fromViewController = UIViewController.topMost else { return  }
         DispatchQueue.main.async {
@@ -89,7 +88,7 @@ public class WZRoute {
     /// - Parameters:
     ///   - animated: 是否动画(默认: true)
     ///   - completion: completion(默认: nil)
-    open class func dismiss(animated: Bool = true, completion: Completion = nil) {
+    @objc open class func dismiss(animated: Bool = true, completion: Completion = nil) {
         
         guard let fromViewController = UIViewController.topMost else { return  }
         fromViewController.view.endEditing(true)
@@ -103,7 +102,7 @@ public class WZRoute {
     ///   - viewController: viewController description
     ///   - sender: sender description
     ///   - completion: Completion
-    open class func showDetail(_ viewController: UIViewController, sender: Any?, completion: Completion = nil) {
+    @objc open class func showDetail(_ viewController: UIViewController, sender: Any?, completion: Completion = nil) {
         
         guard let fromViewController = UIViewController.topMost else { return  }
         CATransaction.begin()
@@ -119,9 +118,9 @@ public class WZRoute {
     ///   - viewControllers: viewControllers description
     ///   - animated: animated description
     ///   - completion: Completion
-    open class func setViewControllers(_ viewControllers: [UIViewController], animated: Bool = true, completion: Completion = nil) {
+    @objc open class func setViewControllers(_ viewControllers: [UIViewController], animated: Bool = true, completion: Completion = nil) {
         
-        guard let navigationController = UIViewController.topMost?.navigationController else {
+        guard let navigationController = navigationController() else {
             return
         }
         
@@ -134,18 +133,42 @@ public class WZRoute {
     
     /// 获取Window上面的根控制器
     ///
-    /// - Returns: <#return value description#>
-    open class func rootViewController() -> UIViewController {
+    /// - Returns: return value description
+    @objc open class func rootViewController() -> UIViewController {
         return UIApplication.shared.keyWindow!.rootViewController!
     }
+    
+    /// 返回当前树的导航栏
+    @objc open class func navigationController() -> UINavigationController? {
+        
+        if let navi = UIViewController.topMost?.navigationController {
+            return navi
+        }
+        
+        if let navi = UIViewController.topMost?.presentingViewController?.navigationController {
+            return navi
+        }
+        
+        if let navi = UIViewController.topMost?.presentingViewController as? UINavigationController {
+            return navi
+        }
+        
+        if let tabbar = UIViewController.topMost?.presentingViewController as? UITabBarController,
+           let navi = tabbar.selectedViewController as? UINavigationController {
+            return navi
+        }
+        
+        return nil
+    }
+    
     
     /// 跳转新控制器移除上个控制器
     /// - Parameters:
     ///   - viewController: viewControllers description
     ///   - animated: animated description
     ///   - completion: Completion
-    open class func setViewControllerRemoveLast(_ viewController: UIViewController, animated: Bool = true, completion: Completion = nil) {
-        guard let navigationController = UIViewController.topMost?.navigationController else {
+    @objc open class func setViewControllerRemoveLast(_ viewController: UIViewController, animated: Bool = true, completion: Completion = nil) {
+        guard let navigationController = navigationController() else {
             return
         }
         var temArray: [UIViewController] = navigationController.viewControllers.dropLast()
@@ -158,8 +181,8 @@ public class WZRoute {
     ///   - viewController: viewControllers description
     ///   - animated: animated description
     ///   - completion: Completion
-    open class func setViewControllerRemoveCurrent(_ viewController: UIViewController, animated: Bool = true, completion: Completion = nil) {
-        guard let navigationController = UIViewController.topMost?.navigationController else {
+    @objc open class func setViewControllerRemoveCurrent(_ viewController: UIViewController, animated: Bool = true, completion: Completion = nil) {
+        guard let navigationController = navigationController() else {
             return
         }
         var temArray: [UIViewController] = []
@@ -177,7 +200,7 @@ public class WZRoute {
     ///   - viewController: viewController description
     ///   - animated: animated description
     ///   - completion: completion description
-    open class func popController(_ viewController: UIViewController, animated: Bool = true, completion: Completion = nil) {
+    @objc open class func popController(_ viewController: UIViewController, animated: Bool = true, completion: Completion = nil) {
 
         guard let navigationController = viewController.navigationController, let topViewController = UIViewController.topMost else {
             return
@@ -203,7 +226,7 @@ public class WZRoute {
 
 
 // MARK: - Methods
-public extension UIViewController {
+@objc public extension UIViewController {
     
     /// sharedApplication
     private class var sharedApplication: UIApplication? {
@@ -213,7 +236,7 @@ public extension UIViewController {
     
     
     /// 返回当前应用程序的最顶层视图控制器。
-    class var topMost: UIViewController? {
+    @objc class var topMost: UIViewController? {
         
         guard let currentWindows = self.sharedApplication?.windows else { return nil }
         var rootViewController: UIViewController?
@@ -232,7 +255,7 @@ public extension UIViewController {
     ///
     /// - Parameter viewController: viewController description
     /// - Returns: return value description
-    class func topMost(of viewController: UIViewController?) -> UIViewController? {
+    @objc class func topMost(of viewController: UIViewController?) -> UIViewController? {
         
         // presented view controller
         if let presentedViewController = viewController?.presentedViewController {

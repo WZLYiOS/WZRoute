@@ -1,16 +1,16 @@
 {
   "name": "WZRoute",
-  "version": "2.0.6",
+  "version": "4.0.0",
   "summary": "我主良缘简单的路由",
   "description": "我主良缘简单的路由.",
-  "homepage": "https://github.com/WZLYiOS/WZRoute",
+  "homepage": "https://github.com/WZLYiOS/WZRoute.git",
   "license": "MIT",
   "authors": {
     "xiaobin liu": "327847390@qq.com"
   },
   "source": {
     "git": "https://github.com/WZLYiOS/WZRoute.git",
-    "tag": "2.0.6"
+    "tag": "4.0.0"
   },
   "requires_arc": true,
   "static_framework": true,
