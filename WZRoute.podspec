@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
 
   s.homepage         = 'https://github.com/WZLYiOS/WZRoute.git'
   s.license          = 'MIT'
-  s.author           = { 'xiaobin liu'=> '327847390@qq.com' }
+  s.author           = { 'qiu qixiang'=> '739140860@qq.com' }
   s.source           = { :git => 'https://github.com/WZLYiOS/WZRoute.git', :tag => s.version.to_s }
 
   s.requires_arc = true
