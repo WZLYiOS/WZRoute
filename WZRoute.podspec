@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name             = 'WZRoute'
-  s.version          = '5.0.0'
+  s.version          = '5.0.1'
   s.summary          = '我主良缘简单的路由 '
 
   s.description      = <<-DESC
@@ -19,12 +19,12 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '9.0'
   s.default_subspec = 'Source'
   
-  s.user_target_xcconfig = {
-    'GENERATE_INFOPLIST_FILE' => 'YES'
-  }
-  s.pod_target_xcconfig = {
-    'GENERATE_INFOPLIST_FILE' => 'YES'
-  }
+#  s.user_target_xcconfig = {
+#    'GENERATE_INFOPLIST_FILE' => 'NO'
+#  }
+#  s.pod_target_xcconfig = {
+#    'GENERATE_INFOPLIST_FILE' => 'YES'
+#  }
 
   s.subspec 'Source' do |ss|
     ss.source_files = 'WZRoute/Classes/*.swift'
