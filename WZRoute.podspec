@@ -19,9 +19,9 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '9.0'
   s.default_subspec = 'Source'
   
-#  s.user_target_xcconfig = {
-#    'GENERATE_INFOPLIST_FILE' => 'NO'
-#  }
+  s.user_target_xcconfig = {
+    'GENERATE_INFOPLIST_FILE' => 'YES'
+  }
 #  s.pod_target_xcconfig = {
 #    'GENERATE_INFOPLIST_FILE' => 'YES'
 #  }
