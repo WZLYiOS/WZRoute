@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name             = 'WZRoute'
-  s.version          = '5.0.1'
+  s.version          = '5.0.2'
   s.summary          = '我主良缘简单的路由'
 
   s.description      = <<-DESC
@@ -13,15 +13,13 @@ Pod::Spec.new do |s|
   s.author           = { 'qiu qixiang'=> '739140860@qq.com' }
   s.source           = { :git => 'https://github.com/WZLYiOS/WZRoute.git', :tag => s.version.to_s }
 
-  s.requires_arc = true
-  s.static_framework = true
-  s.swift_version         = '5.0'
-  s.ios.deployment_target = '9.0'
+  s.swift_version         = '5.3'
+  s.ios.deployment_target = '11.0'
   s.default_subspec = 'Source'
   
-  s.user_target_xcconfig = {
-    'GENERATE_INFOPLIST_FILE' => 'YES'
-  }
+#  s.user_target_xcconfig = {
+#    'GENERATE_INFOPLIST_FILE' => 'YES'
+#  }
 #  s.pod_target_xcconfig = {
 #    'GENERATE_INFOPLIST_FILE' => 'YES'
 #  }
