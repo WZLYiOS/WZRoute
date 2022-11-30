@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name             = 'WZRoute'
-  s.version          = '5.0.2'
+  s.version          = '5.0.3'
   s.summary          = '我主良缘简单的路由'
 
   s.description      = <<-DESC
