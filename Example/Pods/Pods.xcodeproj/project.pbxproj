@@ -6,28 +6,36 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		C15889B9EDA37CCDD72926ACD942068A /* WZRoute */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 2ACAD2E2DA6D0A39DA9729BB07B33A47 /* Build configuration list for PBXAggregateTarget "WZRoute" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = WZRoute;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		0CCB7C708C4CCE09D80F9AC4B24872D8 /* Pods-WZRoute_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 96832F29889968AB080EE874C4AAC82B /* Pods-WZRoute_Tests-dummy.m */; };
-		32243E1A1738D055030E445E6C54085D /* WZRoute-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F58336929DA25F55B4A5525A6995895 /* WZRoute-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		49894D5B65C1F520BC989D254BD76AA5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		50EEF17D34AAC5E5937D5B028C420BB6 /* Pods-WZRoute_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 19256447D8849AF6DEFD4B28EBDD23DC /* Pods-WZRoute_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5814E71F222068E2176DFA128D1A9C2C /* Pods-WZRoute_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EE6BCF368BAB49566F1E3BFB1B3ADEC /* Pods-WZRoute_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6F87F7845D900B49BB439C42AEE9FEC6 /* WZRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27171DCF6565044499D4FA79105DEC9E /* WZRoute.swift */; };
 		8E2A59FE7239F462845857C991A32ADE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		96D02ADBB664CED5AE75C5A86DFD0EC6 /* WZRoute-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C24819C1C6443B35404164247742D9 /* WZRoute-dummy.m */; };
 		C0330744CB24EAF09574DD4FC73B0094 /* Pods-WZRoute_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9776CE393B4CDBB38E4A68EE6DE3CDD6 /* Pods-WZRoute_Example-dummy.m */; };
-		C47016A9520F092FD8CF0D2912089E73 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		680529449549C5AA92A28D5E4DF7138F /* PBXContainerItemProxy */ = {
+		52E6359D7F7147A48890D8D97500D737 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = C15889B9EDA37CCDD72926ACD942068A;
 			remoteInfo = WZRoute;
 		};
-		AF103A4D0A0E21EF7FB023A4BC4BBF15 /* PBXContainerItemProxy */ = {
+		D2099062A25F3E03F9117EF29F0FE240 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -37,38 +45,31 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		18A9FDA2919E76F0765FFCABC652730D /* WZRoute.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WZRoute.debug.xcconfig; sourceTree = "<group>"; };
 		19256447D8849AF6DEFD4B28EBDD23DC /* Pods-WZRoute_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WZRoute_Tests-umbrella.h"; sourceTree = "<group>"; };
+		1AAE972B3CBEBC12558F1BDD5620A425 /* WZRoute.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WZRoute.debug.xcconfig; sourceTree = "<group>"; };
 		1FE69A296EC12FAD0CD5B2D3F7C30829 /* Pods-WZRoute_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WZRoute_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		2096AE7F0886105446B4EB0706DE8AD2 /* Pods-WZRoute_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WZRoute_Example.release.xcconfig"; sourceTree = "<group>"; };
-		27171DCF6565044499D4FA79105DEC9E /* WZRoute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WZRoute.swift; path = WZRoute/Classes/WZRoute.swift; sourceTree = "<group>"; };
-		29A3324FA2E2DD5899211B2EE726A27A /* WZRoute-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WZRoute-prefix.pch"; sourceTree = "<group>"; };
 		2FD90A7EBAC0831A1DD2F083522ACF47 /* Pods-WZRoute_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WZRoute_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		3DC3E21518929A073922D6FFA0C9F65D /* WZRoute.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = WZRoute.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		42C24819C1C6443B35404164247742D9 /* WZRoute-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WZRoute-dummy.m"; sourceTree = "<group>"; };
+		4451A32FBCEEF441522A12816E5C8388 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		4471ED639C3ABE4FEE14410BE9FCDE86 /* Pods-WZRoute_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WZRoute_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		4F58336929DA25F55B4A5525A6995895 /* WZRoute-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WZRoute-umbrella.h"; sourceTree = "<group>"; };
 		514A6CFE214186F618F093B2C24D3ED6 /* Pods_WZRoute_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WZRoute_Tests.framework; path = "Pods-WZRoute_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		54AD92264A71B652649F672CB9D44578 /* Pods-WZRoute_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WZRoute_Example-Info.plist"; sourceTree = "<group>"; };
 		5C0D07128A3932B9EFB2DF151EF70D7A /* Pods-WZRoute_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WZRoute_Tests-Info.plist"; sourceTree = "<group>"; };
-		5F777AF310E86A6A1BED5393858F23BC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		6409839BE26B4C36D778CF2924127CFF /* WZRoute-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "WZRoute-Info.plist"; sourceTree = "<group>"; };
-		65BB15FC214283AF3A2EE3222864BF50 /* WZRoute.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WZRoute.release.xcconfig; sourceTree = "<group>"; };
-		71991396E01AEA35BF9C8915CBA7D8C3 /* WZRoute.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WZRoute.framework; path = WZRoute.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		7B66FEAB3B27F3FB030FF2363A30276D /* Pods-WZRoute_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WZRoute_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		7D3C3E4DF7CDFDE742327533448ADC77 /* Pods-WZRoute_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WZRoute_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		802387FD2309A0A910B5E2D866F6E477 /* WZRoute.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WZRoute.release.xcconfig; sourceTree = "<group>"; };
 		96832F29889968AB080EE874C4AAC82B /* Pods-WZRoute_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WZRoute_Tests-dummy.m"; sourceTree = "<group>"; };
 		9776CE393B4CDBB38E4A68EE6DE3CDD6 /* Pods-WZRoute_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WZRoute_Example-dummy.m"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9EE6BCF368BAB49566F1E3BFB1B3ADEC /* Pods-WZRoute_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WZRoute_Example-umbrella.h"; sourceTree = "<group>"; };
-		AE489798D7F62B8B9205D75BDB0B4CB4 /* WZRoute.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WZRoute.modulemap; sourceTree = "<group>"; };
+		A47A07DBDE0823109F197F51FE7F4057 /* WZRoute.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = WZRoute.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BE2BFD0C47A99821D585EA54ED3A4B0E /* Pods-WZRoute_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WZRoute_Tests.modulemap"; sourceTree = "<group>"; };
 		C139EFEBDC39CD2629B01876A37C1C53 /* Pods-WZRoute_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WZRoute_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		C59A632C0875D56BBF10BB2D42FF3633 /* Pods_WZRoute_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WZRoute_Example.framework; path = "Pods-WZRoute_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C79EB44DB96185D595BDDA4272C4EFB1 /* Pods-WZRoute_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WZRoute_Example.modulemap"; sourceTree = "<group>"; };
 		D7F0EC3152A2D2F8362FF6C7077B670F /* Pods-WZRoute_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WZRoute_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		DF09D7F7F939117349F6D06EAA619603 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		DD800D2F51A3B490D73478BEFBA85EC2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,17 +89,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AEC6B3D6D60860D26B5E2EAE320801C1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C47016A9520F092FD8CF0D2912089E73 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		098AA0FFCF33D983D42B1133B569C725 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C59A632C0875D56BBF10BB2D42FF3633 /* Pods_WZRoute_Example.framework */,
+				514A6CFE214186F618F093B2C24D3ED6 /* Pods_WZRoute_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		0EB2B2A8FEB4695A6503EECF11A594C1 /* Pods-WZRoute_Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -115,46 +117,50 @@
 			path = "Target Support Files/Pods-WZRoute_Example";
 			sourceTree = "<group>";
 		};
-		24568201A3A7E74DE51997190210AA8A /* WZRoute */ = {
-			isa = PBXGroup;
-			children = (
-				A4FD4636B6AAE760DA117FA3571E262A /* Pod */,
-				DBF5BB19907AE4CEA45F18D1778A12BF /* Source */,
-				44E0FE104418506721DDF7EF009BB0D8 /* Support Files */,
-			);
-			name = WZRoute;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		2DCBB0742ABBA1DCE4033FF0D1995ADE /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				24568201A3A7E74DE51997190210AA8A /* WZRoute */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		44E0FE104418506721DDF7EF009BB0D8 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				AE489798D7F62B8B9205D75BDB0B4CB4 /* WZRoute.modulemap */,
-				42C24819C1C6443B35404164247742D9 /* WZRoute-dummy.m */,
-				6409839BE26B4C36D778CF2924127CFF /* WZRoute-Info.plist */,
-				29A3324FA2E2DD5899211B2EE726A27A /* WZRoute-prefix.pch */,
-				4F58336929DA25F55B4A5525A6995895 /* WZRoute-umbrella.h */,
-				18A9FDA2919E76F0765FFCABC652730D /* WZRoute.debug.xcconfig */,
-				65BB15FC214283AF3A2EE3222864BF50 /* WZRoute.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/WZRoute";
-			sourceTree = "<group>";
-		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
 			isa = PBXGroup;
 			children = (
 				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		5E500520A17A0F29D74DECB1A650D9C4 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				4451A32FBCEEF441522A12816E5C8388 /* LICENSE */,
+				DD800D2F51A3B490D73478BEFBA85EC2 /* README.md */,
+				A47A07DBDE0823109F197F51FE7F4057 /* WZRoute.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		724E10F2FDB2696F79EA9C60E8FE2599 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				85B9FAE5C9D82BB5C728AC6293C74C51 /* WZRoute */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		7BDB35AC5560E12A14BA4F5FB10D28FD /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1AAE972B3CBEBC12558F1BDD5620A425 /* WZRoute.debug.xcconfig */,
+				802387FD2309A0A910B5E2D866F6E477 /* WZRoute.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/WZRoute";
+			sourceTree = "<group>";
+		};
+		85B9FAE5C9D82BB5C728AC6293C74C51 /* WZRoute */ = {
+			isa = PBXGroup;
+			children = (
+				5E500520A17A0F29D74DECB1A650D9C4 /* Pod */,
+				7BDB35AC5560E12A14BA4F5FB10D28FD /* Support Files */,
+			);
+			name = WZRoute;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		96AA40A01932E119A240185301BF8DC1 /* Targets Support Files */ = {
@@ -166,33 +172,13 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		A475E672F9B5367F5E2E819223C4865D /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				C59A632C0875D56BBF10BB2D42FF3633 /* Pods_WZRoute_Example.framework */,
-				514A6CFE214186F618F093B2C24D3ED6 /* Pods_WZRoute_Tests.framework */,
-				71991396E01AEA35BF9C8915CBA7D8C3 /* WZRoute.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		A4FD4636B6AAE760DA117FA3571E262A /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				DF09D7F7F939117349F6D06EAA619603 /* LICENSE */,
-				5F777AF310E86A6A1BED5393858F23BC /* README.md */,
-				3DC3E21518929A073922D6FFA0C9F65D /* WZRoute.podspec */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				2DCBB0742ABBA1DCE4033FF0D1995ADE /* Development Pods */,
+				724E10F2FDB2696F79EA9C60E8FE2599 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				A475E672F9B5367F5E2E819223C4865D /* Products */,
+				098AA0FFCF33D983D42B1133B569C725 /* Products */,
 				96AA40A01932E119A240185301BF8DC1 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -203,14 +189,6 @@
 				578452D2E740E91742655AC8F1636D1F /* iOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		DBF5BB19907AE4CEA45F18D1778A12BF /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				27171DCF6565044499D4FA79105DEC9E /* WZRoute.swift */,
-			);
-			name = Source;
 			sourceTree = "<group>";
 		};
 		FD87CA29CED93D6A0DF7291870FB3A11 /* Pods-WZRoute_Tests */ = {
@@ -248,14 +226,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D379A26E7AFE02021C060850C104428D /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				32243E1A1738D055030E445E6C54085D /* WZRoute-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -271,7 +241,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				EBA2097C06883DF2ED09F59B0A98C6EE /* PBXTargetDependency */,
+				4271341E7B17892428F62F576B785903 /* PBXTargetDependency */,
 			);
 			name = "Pods-WZRoute_Example";
 			productName = "Pods-WZRoute_Example";
@@ -290,29 +260,11 @@
 			buildRules = (
 			);
 			dependencies = (
-				451A9B425FFE74BC1D42A51BB42B38C2 /* PBXTargetDependency */,
+				3E9B50DE22C6C0DA979322168D818F6F /* PBXTargetDependency */,
 			);
 			name = "Pods-WZRoute_Tests";
 			productName = "Pods-WZRoute_Tests";
 			productReference = 514A6CFE214186F618F093B2C24D3ED6 /* Pods_WZRoute_Tests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		C15889B9EDA37CCDD72926ACD942068A /* WZRoute */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = ACDD9CF178717125443723E1001EFF56 /* Build configuration list for PBXNativeTarget "WZRoute" */;
-			buildPhases = (
-				D379A26E7AFE02021C060850C104428D /* Headers */,
-				FD098F10D418700FF4BE543277FE4BFF /* Sources */,
-				AEC6B3D6D60860D26B5E2EAE320801C1 /* Frameworks */,
-				524B6B835DE08C14B9142D5BC365DAB1 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = WZRoute;
-			productName = WZRoute;
-			productReference = 71991396E01AEA35BF9C8915CBA7D8C3 /* WZRoute.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -333,7 +285,7 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = A475E672F9B5367F5E2E819223C4865D /* Products */;
+			productRefGroup = 098AA0FFCF33D983D42B1133B569C725 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -346,13 +298,6 @@
 
 /* Begin PBXResourcesBuildPhase section */
 		08FAA1CE0A028810077E27F482C608F0 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		524B6B835DE08C14B9142D5BC365DAB1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -385,29 +330,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FD098F10D418700FF4BE543277FE4BFF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				96D02ADBB664CED5AE75C5A86DFD0EC6 /* WZRoute-dummy.m in Sources */,
-				6F87F7845D900B49BB439C42AEE9FEC6 /* WZRoute.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		451A9B425FFE74BC1D42A51BB42B38C2 /* PBXTargetDependency */ = {
+		3E9B50DE22C6C0DA979322168D818F6F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-WZRoute_Example";
 			target = 03CB08814299A8DC4CA95D0E0B1CFF90 /* Pods-WZRoute_Example */;
-			targetProxy = AF103A4D0A0E21EF7FB023A4BC4BBF15 /* PBXContainerItemProxy */;
+			targetProxy = D2099062A25F3E03F9117EF29F0FE240 /* PBXContainerItemProxy */;
 		};
-		EBA2097C06883DF2ED09F59B0A98C6EE /* PBXTargetDependency */ = {
+		4271341E7B17892428F62F576B785903 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = WZRoute;
 			target = C15889B9EDA37CCDD72926ACD942068A /* WZRoute */;
-			targetProxy = 680529449549C5AA92A28D5E4DF7138F /* PBXContainerItemProxy */;
+			targetProxy = 52E6359D7F7147A48890D8D97500D737 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -478,38 +414,6 @@
 			};
 			name = Debug;
 		};
-		2C8D39D221FF965CA0B190A5655BBCC1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 65BB15FC214283AF3A2EE3222864BF50 /* WZRoute.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/WZRoute/WZRoute-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/WZRoute/WZRoute-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/WZRoute/WZRoute.modulemap";
-				PRODUCT_MODULE_NAME = WZRoute;
-				PRODUCT_NAME = WZRoute;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		39BFAB1A164BC5CF908311BC857B4936 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2096AE7F0886105446B4EB0706DE8AD2 /* Pods-WZRoute_Example.release.xcconfig */;
@@ -575,37 +479,6 @@
 			};
 			name = Debug;
 		};
-		57D2468B3BD8EAA7E05001AC605C0F52 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 18A9FDA2919E76F0765FFCABC652730D /* WZRoute.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/WZRoute/WZRoute-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/WZRoute/WZRoute-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/WZRoute/WZRoute.modulemap";
-				PRODUCT_MODULE_NAME = WZRoute;
-				PRODUCT_NAME = WZRoute;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		92DB839CB75037140D72A0D8600644C3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C139EFEBDC39CD2629B01876A37C1C53 /* Pods-WZRoute_Tests.release.xcconfig */;
@@ -638,6 +511,20 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		9B488607EE714E64B83E4EC5ED764381 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AAE972B3CBEBC12558F1BDD5620A425 /* WZRoute.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
 		};
 		B9E9710C1A00160834A3BA858C629CA3 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -733,6 +620,21 @@
 			};
 			name = Release;
 		};
+		D9592531F10C47EF8240FC900B2D3DBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 802387FD2309A0A910B5E2D866F6E477 /* WZRoute.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -754,20 +656,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		2ACAD2E2DA6D0A39DA9729BB07B33A47 /* Build configuration list for PBXAggregateTarget "WZRoute" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B488607EE714E64B83E4EC5ED764381 /* Debug */,
+				D9592531F10C47EF8240FC900B2D3DBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */,
 				CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		ACDD9CF178717125443723E1001EFF56 /* Build configuration list for PBXNativeTarget "WZRoute" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				57D2468B3BD8EAA7E05001AC605C0F52 /* Debug */,
-				2C8D39D221FF965CA0B190A5655BBCC1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

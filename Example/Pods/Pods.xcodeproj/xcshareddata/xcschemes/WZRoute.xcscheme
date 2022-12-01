@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C15889B9EDA37CCDD72926ACD942068A"
-               BuildableName = "WZRoute.framework"
+               BuildableName = "WZRoute"
                BlueprintName = "WZRoute"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>

@@ -1,6 +1,6 @@
 {
   "name": "WZRoute",
-  "version": "5.0.1",
+  "version": "5.0.2",
   "summary": "我主良缘简单的路由",
   "description": "我主良缘简单的路由.",
   "homepage": "https://github.com/WZLYiOS/WZRoute.git",
@@ -10,13 +10,11 @@
   },
   "source": {
     "git": "https://github.com/WZLYiOS/WZRoute.git",
-    "tag": "5.0.1"
+    "tag": "5.0.2"
   },
-  "requires_arc": true,
-  "static_framework": true,
-  "swift_versions": "5.0",
+  "swift_versions": "5.3",
   "platforms": {
-    "ios": "9.0"
+    "ios": "11.0"
   },
   "default_subspecs": "Source",
   "subspecs": [
@@ -25,5 +23,5 @@
       "source_files": "WZRoute/Classes/*.swift"
     }
   ],
-  "swift_version": "5.0"
+  "swift_version": "5.3"
 }
