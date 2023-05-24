@@ -238,16 +238,21 @@ import UIKit
     /// 返回当前应用程序的最顶层视图控制器。
     @objc class var topMost: UIViewController? {
         
-        guard let currentWindows = self.sharedApplication?.windows else { return nil }
-        var rootViewController: UIViewController?
-        for window in currentWindows {
-            if let windowRootViewController = window.rootViewController {
-                rootViewController = windowRootViewController
-                break
+        if #available(iOS 13.0, *) {
+            let rootViewController = UIApplication.shared.windows.first(where: {$0.isKeyWindow})?.rootViewController
+            return self.topMost(of: rootViewController)
+        } else {
+            guard let currentWindows = self.sharedApplication?.windows else { return nil }
+            var rootViewController: UIViewController?
+            for window in currentWindows {
+                if let windowRootViewController = window.rootViewController {
+                    rootViewController = windowRootViewController
+                    break
+                }
             }
+            
+            return self.topMost(of: rootViewController)
         }
-        
-        return self.topMost(of: rootViewController)
     }
     
     

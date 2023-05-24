@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name             = 'WZRoute'
-  s.version          = '5.0.4'
+  s.version          = '5.1.0'
   s.summary          = '我主良缘简单的路由'
 
   s.description      = <<-DESC
@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/WZLYiOS/WZRoute.git', :tag => s.version.to_s }
 
   s.swift_version         = '5.0'
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '11.0'
   s.default_subspec = 'Source'
   
 #  s.user_target_xcconfig = {

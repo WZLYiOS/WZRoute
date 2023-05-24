@@ -1,6 +1,7 @@
 PODS:
-  - WZRoute (5.0.2):
-    - WZRoute/Source (= 5.0.2)
+  - WZRoute (5.0.4):
+    - WZRoute/Source (= 5.0.4)
+  - WZRoute/Source (5.0.4)
 
 DEPENDENCIES:
   - WZRoute (from `../`)
@@ -10,8 +11,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  WZRoute: a2723637b63779c2c57ecd67580858b279942dfe
+  WZRoute: 61e81be95065edd8d90d7e6b6adf19f4216545a6
 
-PODFILE CHECKSUM: b8c19d348b512c21743ee16a5e49bb6ffc818cb4
+PODFILE CHECKSUM: 8315e7cc88335008331c55dc87eb15c07e2b2941
 
-COCOAPODS: 1.10.0
+COCOAPODS: 1.11.3

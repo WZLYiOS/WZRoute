@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import WZRoute
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
