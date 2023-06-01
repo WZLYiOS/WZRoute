@@ -130,12 +130,30 @@ import UIKit
         CATransaction.commit()
     }
     
+    /// setRootViewController
+    ///
+    /// - Parameters:
+    ///   - rootViewController: viewControllers description
+    ///   - duration: duration
+    @objc open class func setRootViewController(_ rootViewController: UIViewController, duration: CGFloat = 0.5) {
+        guard let window = UIApplication.shared.windows.first(where: {$0.isKeyWindow}) else { return }
+        UIView.transition(with: window, duration: duration, options: UIView.AnimationOptions.transitionCrossDissolve, animations: {
+            let oldState = UIView.areAnimationsEnabled
+            UIView.setAnimationsEnabled(false)
+            window.subviews.forEach { $0.removeFromSuperview() }
+            window.rootViewController = nil
+            window.rootViewController = rootViewController
+            window.makeKeyAndVisible()
+            UIView.setAnimationsEnabled(oldState)
+        }, completion: nil)
+    }
+    
     
     /// 获取Window上面的根控制器
     ///
     /// - Returns: return value description
     @objc open class func rootViewController() -> UIViewController {
-        return UIApplication.shared.keyWindow!.rootViewController!
+        return UIApplication.shared.windows.first(where: {$0.isKeyWindow})!.rootViewController!
     }
     
     /// 返回当前树的导航栏
@@ -239,7 +257,7 @@ import UIKit
     @objc class var topMost: UIViewController? {
         
         if #available(iOS 13.0, *) {
-            let rootViewController = UIApplication.shared.windows.first(where: {$0.isKeyWindow})?.rootViewController
+            let rootViewController = WZRoute.rootViewController()
             return self.topMost(of: rootViewController)
         } else {
             guard let currentWindows = self.sharedApplication?.windows else { return nil }
